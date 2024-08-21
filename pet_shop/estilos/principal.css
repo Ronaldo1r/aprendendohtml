@@ -1,6 +1,6 @@
 /*estrutura*/
 body {
-    width: 1000px;
+    width: 1000px;          /*o corpo central aparece mais colado as bordas do navegador e aparece centralizado na pagina */
     margin-left: auto;
     margin-right: auto;
 }
@@ -36,7 +36,7 @@ header section p {
     margin: 33px auto 7px;
 }
 header section figure {
-    width: 100%;
+    width: 100%;           /*são combinados para que não seja nescessário acrescentarmarcação não semântica á estrutura */
     margin: 0px;
 }
 header section figure a {
@@ -49,6 +49,7 @@ header section figure a:first-child {
 header section figure a:last-child {
     padding: 25px 0 0 5px;
 }
+/***************************************************************************************************************************************/
 /*estrutura de navegação*/
 nav {
     background-color: #000;
@@ -61,7 +62,7 @@ nav ul {
     padding-left: 0px;
     margin-top: 1px;
 }
-nav ul li {
+nav ul li {                              /*estrutura semânticaauxilia a criação do layout*/
     float: left;
 }
 nav ul a {
@@ -78,6 +79,7 @@ nav ul a {
 #curiosidades a[href="curiosidades.html"] {
     background-color:#c0262c 
 }
+/****************************************************************************************************************************************/
 /*estrutura página inicial*/
 #inicial aside {
     width: 230px;
@@ -89,6 +91,7 @@ nav ul a {
     float: left;
     margin: 30px 25px 10px;
 }
+/***************************************************************************************************************************************/
 /*rodapé*/
 footer {
     clear: both;
@@ -100,6 +103,12 @@ footer {
 }
 footer p {
     margin: 0px;
+}
+/**************************************************************************************************************************************/
+/*texto da aréa principal*/
+body 
+{
+    font-family: Helvetical, Ariel, sans-serif;
 }
 main h1 {
     color: #c0262c;
@@ -121,7 +130,7 @@ main p {
     text-align: justify; /*Alinha o texto dos parágrafos de forma justificada, distribuindo o texto uniformemente entre as margens*/
 }
 main h2+p:first-line {
-    font-size: 1.1em;
+    font-size: 1.17em;
     font-variant: small-caps;
     font-weight: bolder;
     font-style: italic;
@@ -129,7 +138,7 @@ main h2+p:first-line {
 main hr {
     border-color: #c0262c;
 }
-
+/*********************************************************************************************************************************************/
 /*página produtos - tabela*/
 #produtos table{
     width: 600px;                  /*centraliza a tabela produto*/
@@ -206,7 +215,7 @@ input#nome, input#email {
     color: #fff;
     width: 800px                     /*largura*/
 }
-/******************************************************************************************/
+/**************************************************************************************************************************************************/
 ::-webkit-input-placeholder { /*chrome/safari/Opera */ 
     color: #ddd;
     font-style: italic;  /*campos de entrada para navegadores*/
@@ -222,7 +231,14 @@ input#nome, input#email {
     font-style: italic;
     font-size: .8em;
 }
-/******************************************************************************************/
+label 
+{
+    display: block;
+    margin-top: 7px;
+    float: left;
+    width: 60px;
+}
+/*********************************************************************************************************************************************/
 /* página banho e tosa - formulário */
 #banhoEtosa fieldset {
     background-color: #fff;
@@ -238,11 +254,11 @@ input#nome, input#email {
     padding: 10px;
     margin-left: -13px;
 }
-#banhoEtosa fieldset label { /*mudanças tipo de visualização*/
-    display: block;          /**/
+#banhoEtosa fieldset label { 
+    display: block;          
     margin-top: 7px;
-    float: left;             /*e as propriedades float e width para que*/
-    width: 115px;          /*ficasse flutuando ao lado dos elementos input*/
+    float: left;             
+    width: 115px;          
 }
 #banhoEtosa fieldset input [type="text"],
 #banhoEtosa fieldset input [type="email"] {
@@ -258,7 +274,7 @@ input#nome, input#email {
     font-size: 1.2em;
     border: #000 solid 1px;
 }
-/***********************************************************************************/
+/**********************************************************************************************************************************************/
 #banhoEtosa fieldset label.labelSimples {
     display: inline;            /**/
     float: none;
@@ -287,14 +303,16 @@ input#nome, input#email {
     /* 21/16=1.3125em */
     letter-spacing: .07em;
 }
+/***********************************************************************************************************************************************/
 /*página quem somos*/
-#quemSomos main img {
+#quemSomos main img {    /*a imagem flutuoupara a esquerda,abrindo espaço para que o testoviesse para a direta*/
     float: left;
     margin: 0 20px 20px 0;
     padding: 10px;
     border: solid #c0262c thin;
     background-color: #fff;
 }
+/***********************************************************************************************************************************************/
 /*pagina obrigado*/
 #obrigado main p img {
     float: left;
